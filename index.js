@@ -20,11 +20,11 @@ app.use(cors())
 //Connect to MongoDB
 mongoose.set("useFindAndModify", false);
 
-// "mongodb+srv://laxmaniron:lucky@IRON1@cluster0.i8ev5.mongodb.net/GREnew?retryWrites=true&w=majority"
+
 
 // "mongodb://localhost:27017/GREnew" 
 mongoose
-  .connect("mongodb+srv://laxmaniron:lucky@IRON1@cluster0.i8ev5.mongodb.net/GREnew?retryWrites=true&w=majority", {
+  .connect("myuri", {
     useNewUrlParser: true,
     useUnifiedTopology: true
   }) // only in development environment
